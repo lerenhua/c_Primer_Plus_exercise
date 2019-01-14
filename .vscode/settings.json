@@ -1,0 +1,11 @@
+{
+    "C_Cpp.errorSquiggles": "Disabled",
+    "files.associations": {
+        "iostream": "cpp",
+        "ostream": "cpp",
+        "climits": "cpp",
+        "cfloat": "cpp"
+    },
+    "python.pythonPath": "F:\\Anaconda3\\envs\\tensorflow_1\\python.exe",
+    "python.dataScience.jupyterServerURI": "local"
+}
