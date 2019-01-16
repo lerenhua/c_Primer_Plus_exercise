@@ -3,7 +3,7 @@ C++ Primer Plus 第五版编程练习题集合
 <br>此repo用于记录书本课后编程习题代码，记录自己的学习进度
 ## 目录
 * [chapter 2](#chapyer-2) : 开始学习C++ 
-* chapter 3 ：处理数据
+* [chapter 3](#chapter-3) ：处理数据
   
 ## 章节内容概述
 #### chapter 2
