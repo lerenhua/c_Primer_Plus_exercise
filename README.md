@@ -2,11 +2,12 @@
 C++ Primer Plus 第五版编程练习题集合
 <br>此repo用于记录书本课后编程习题代码，记录自己的学习进度
 ## 目录
-* [chapter 2](#chapyer-2) : 开始学习C++ 
+* [chapter 2](#chapyer-2) ：开始学习C++ 
 * [chapter 3](#chapter-3) ：处理数据
+* [chapter 4](#chapter-4) ：复合类型
   
 ## 章节内容概述
-#### chapter 2
+### chapter 2
 * C++程序的一般形式：
   <br> * 注释， 由//前缀指示。
   <br> * 预处理器编译指令 #include。
@@ -26,7 +27,7 @@ C++ Primer Plus 第五版编程练习题集合
   <br> 1. 使用有返回值的函数。
   <br> 2. 函数变体 -- 某些语言中，有返回值函数为函数（function），无返回值函数为过程（procedure）或子程序（subroutine），在C++中两种变体统称函数。
   <br> 3. 用户定义的函数：3.1 函数原型； 3.2 函数定义
-#### chapter 3
+### chapter 3
 * 变量命名规则
   <br> 1. 只能使用字母，数字和下划线（_）。
   <br> 2. 名称第一个不能是数字。
@@ -64,5 +65,28 @@ C++ Primer Plus 第五版编程练习题集合
     <br> &ensp; * C++风格形式：typeName（value）
     <br> &ensp; * 强制类型转换不改变变量本身，而是创建新的指定类型的值。
 
+### chapter 4
+#### 数组
+  * 继承于C语言的数组,使用方法一致
+  * 声明语句要素：
+    <br> &ensp; 1. 存储在每个元素的值的类型
+    <br> &ensp; 2. 数组名
+    <br> &ensp; 3. 数组中的元素个数 （特殊情况：定义与初始化一起时可不指定个数）
+  * 初始化规则
+    <br> &ensp; * `int cards[4] = {3, 6, 8, 10};`（合法）
+    <br> &ensp; * `int hand[4];`（合法）
+    <br> &ensp; * `long totals[500] = {5, 2};`（部分初始化，其余为0；合法）
+    <br> &ensp; * `short things[] = {1, 5, 3, 8};`（可不指明个数初始化，编译时编译器会计算出个数）
+  * 注意
+    <br> &ensp; 1. 使用数组时，要使用有效下标值。因为编译器不会检查下标是否有效或越界。
+    <br> &ensp; 2. 只有定义数组时才能初始化，之后无法使用数组赋值数组的方式
+#### 字符串
+##### C-风格字符串(c-style string)
+* C-风格字符串性质：以空字符(null character)结尾，空字符被写作`\0`，用以标记字符串结尾，如
+  `char dog[5] = {'b', 'e', 'a', 'u', 'x'}` 非字符串， `char cat[5] = {'f', 'a', 't', 's', '\0'}` 为字符串。
+* 字符串常量（使用双引号）与字符常量（使用单引号）不能互换。
+* 拼接字符串常量：
+  <br> * 任何两个由空白符（空格，制表符，换行符）分隔的字符串常量自动拼接，如`cout << "I'd give my right arm to be" "a great violinist.\n";` 等价 `cout << "I'd give my right arm to be a great violinist.\n";`
+  
 
 ## 未完待续 . . .
