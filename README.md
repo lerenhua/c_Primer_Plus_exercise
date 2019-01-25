@@ -15,7 +15,17 @@ C++ Primer Plus 第五版编程练习题集合
   * [指针，数组和指针算术](#指针，数组和指针算术)
 * [chapter 5](#chapter-5) ：循环和关系表达式
   * [for循环](#for循环) 
+  * [关系表达式](#关系表达式)
+  * [while 循环](#while-循环)
+  * [do while 循环](#do-while-循环)
+  * [二维数组](#二维数组)
+  * [类型别名](#类型别名)
 * [chapter 6](#chapter-6) ：分支语句和逻辑操作符
+  * [if语句及if-else语句](#if语句及if-else语句)
+  * [逻辑表达式](#逻辑表达式)
+  * [switch语句](#switch语句)
+  * [break和continue语句](#break和continue语句)
+  * 
   
 ## 章节内容概述
 ### chapter 2
