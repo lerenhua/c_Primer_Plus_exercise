@@ -15,6 +15,7 @@ C++ Primer Plus 第五版编程练习题集合
   * [指针，数组和指针算术](#指针，数组和指针算术)
 * [chapter 5](#chapter-5) ：循环和关系表达式
   * [for循环](#for循环) 
+* [chapter 6](#chapter-6) ：分支语句和逻辑操作符
   
 ## 章节内容概述
 ### chapter 2
@@ -366,7 +367,49 @@ C++ Primer Plus 第五版编程练习题集合
   typedef char byte; //  使用byte作为char的别名
   ```
   typedef不会创建新类型，而是为已有类型建立一个新的名称。typedef 比 #define 能处理更复杂的类型别名。
+
+### chapter 6
+#### if语句及if-else语句
+  ```C++
+  if (test-condition)  // 测试条件为真，则执行语句
+    statement
   
+  if (test-condition)
+    statement1  // 如果多个语句， 则用花括号{}括起
+  else
+    statement2
+
+  if (test-condition)
+    statement1
+  else if (test-condition)
+    statement2
+  else
+    statement3
+  ```
+#### 逻辑表达式
+* 逻辑或操作符（||）
+* 逻辑与操作符（&&）
+  * 取值范围测试：不要使用形如`17 < age < 35`这种数学形式的表达式，其实际结果为`(17 < age) < 35`的逻辑值，应用完整逻辑表达式，如`(17 < age) && (age < 35)`。
+* 逻辑非操作符（!）
+#### switch语句
+* 语句格式：
+  ```C++
+  switch (integer-expression)
+  {
+    case label1: statement
+    ...
+    default: statement
+  }
+  ```
+* 注意：
+  * integer-expression 必须为结果是整数值的表达式；每个标签必须是整数常量的表达式（如int, char类型及枚举量）。
+  * 程序跳转到switch特定代码时，将依次执行之后的语句，因此，需要注意是否设置中止跳转。
+  * 无法用于浮点测试及两个变量的比较，因为case标签值要求为常量。
+  * if-else也可以用于多选项，但是当选项多于3个时，使用switch语句效率更高。
+#### break和continue语句
+* brak语句：跳过循环体剩余部分，并结束循环进入下一条语句。
+* continue语句：跳过循环体剩余部分，并继续循环，开始下一轮循环。
+#### 简单文件输入/输出（待补充）
 
 
 ## 未完待续 . . .
