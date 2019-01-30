@@ -40,7 +40,9 @@
         "type_traits": "cpp",
         "tuple": "cpp",
         "typeinfo": "cpp",
-        "utility": "cpp"
+        "utility": "cpp",
+        "math.h": "c",
+        "stdlib.h": "c"
     },
     "python.pythonPath": "F:\\Anaconda3\\envs\\tensorflow_1\\python.exe",
     "python.dataScience.jupyterServerURI": "local"
