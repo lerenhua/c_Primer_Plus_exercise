@@ -42,7 +42,8 @@
         "typeinfo": "cpp",
         "utility": "cpp",
         "math.h": "c",
-        "stdlib.h": "c"
+        "stdlib.h": "c",
+        "dense": "cpp"
     },
     "python.pythonPath": "F:\\Anaconda3\\envs\\tensorflow_1\\python.exe",
     "python.dataScience.jupyterServerURI": "local"
